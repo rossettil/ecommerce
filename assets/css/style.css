@@ -1,0 +1,95 @@
+:root {
+    --azul-noche:  #141A22;
+    --azul:        #1F2833;
+    --superficie:  #2A3441;
+    --verde:       #0A9481;
+    --verde-boton: #087A6B;
+    --verde-hover: #066457;
+    --menta:       #3DD9B8;
+    --gris-claro:  #F4F7F6;
+    --gris-suave:  #B8C2CC;
+    --gris-texto:  #5B6672;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+}
+
+@media (max-width:991.98px) {
+    .logo {
+        height: 36px;
+    }
+}
+
+/* BACKGROUNDS*/
+.bg-azul-noche { background-color: var(--azul-noche); }
+.bg-azul       { background-color: var(--azul); }
+.bg-superficie { background-color: var(--superficie); }
+.bg-gris-claro { background-color: var(--gris-claro); }
+
+/* TEXT */
+.text-azul       { color: var(--azul); }
+.text-verde      { color: var(--verde); }
+.text-menta      { color: var(--menta); }
+.text-gris       { color: var(--gris-texto); }
+.text-gris-suave { color: var(--gris-suave); }
+
+/* BTN */
+.btn-marca {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--verde-boton);
+    --bs-btn-border-color: var(--verde-boton);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--verde-hover);
+    --bs-btn-hover-border-color: var(--verde-hover);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--verde-hover);
+    --bs-btn-active-border-color: var(--verde-hover);
+    --bs-btn-focus-shadow-rgb: 10, 148, 129;
+}
+
+/* HEADER */
+.header-oscuro .nav-link {
+    color: var(--gris-suave);
+}
+
+.header-oscuro .nav-link:hover,
+.header-oscuro .nav-link:focus {
+    color: var(--menta);
+}
+
+.form-control:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 0.25rem rgba(10, 148, 129, 0.25);
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+.input-group .btn {
+    --bs-btn-focus-box-shadow: none;
+}
+
+.input-group:focus-within {
+    box-shadow: 0 0 0 0.25rem rgba(10, 148, 129, 0.25);
+    border-radius: var(--bs-border-radius);
+}
+
+.card-categoria, .card-producto {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-categoria:hover, .card-producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img-producto {
+    height: 180px;
+    width: auto;
+    object-fit: contain;
+    padding: 1rem;
+}
