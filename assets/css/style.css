@@ -93,3 +93,16 @@
     object-fit: contain;
     padding: 1rem;
 }
+
+.pagination {
+    --bs-pagination-color: var(--verde);
+    --bs-pagination-hover-color: var(--verde-hover);
+    --bs-pagination-active-bg: var(--verde-boton);
+    --bs-pagination-active-border-color: var(--verde-boton);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(10, 148, 129, 0.25);
+}
+
+.list-group {
+    --bs-list-group-active-bg: var(--verde-boton);
+    --bs-list-group-active-border-color: var(--verde-boton);
+}
