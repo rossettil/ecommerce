@@ -106,3 +106,9 @@
     --bs-list-group-active-bg: var(--verde-boton);
     --bs-list-group-active-border-color: var(--verde-boton);
 }
+
+.img-detalle {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}

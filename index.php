@@ -10,6 +10,9 @@ switch ($pagina) {
     case "catalogo":
         $vista = "catalogo";
         break;
+    case "producto":
+        $vista = "producto";
+        break;
     default:
         $vista = "inicio";
         break;
